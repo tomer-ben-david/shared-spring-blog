@@ -443,10 +443,20 @@
    ============================================ */
 
 .sb-social-sharing {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background-color: #f9fafb;
-    border-radius: 0.5rem;
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sb-social-sharing-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
 }
 
 .sb-social-sharing-title {
@@ -463,31 +473,57 @@
 }
 
 .sb-social-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #374151;
     font-size: 0.875rem;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
     text-decoration: none;
-    transition: opacity 0.2s ease;
 }
 
 .sb-social-btn:hover {
-    opacity: 0.9;
+    transform: translateY(-1px);
 }
 
-.sb-social-twitter {
-    background-color: #1da1f2;
+.sb-social-btn svg {
+    flex-shrink: 0;
+}
+
+.sb-social-twitter:hover {
+    background: #1da1f2;
+    border-color: #1da1f2;
     color: white;
 }
 
-.sb-social-linkedin {
-    background-color: #0077b5;
+.sb-social-facebook:hover {
+    background: #1877f2;
+    border-color: #1877f2;
     color: white;
 }
 
-.sb-social-facebook {
-    background-color: #1877f2;
+.sb-social-linkedin:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+    color: white;
+}
+
+.sb-social-copy:hover {
+    background: #f3f4f6;
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.sb-social-copy.sb-copied {
+    background: #10b981;
+    border-color: #10b981;
     color: white;
 }
 
@@ -573,11 +609,18 @@
         padding: 1rem;
     }
 
-    .sb-social-sharing-buttons {
+    .sb-social-sharing {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sb-social-sharing-buttons {
+        width: 100%;
     }
 
     .sb-social-btn {
-        text-align: center;
+        flex: 1;
+        justify-content: center;
+        min-width: 0;
     }
 }
