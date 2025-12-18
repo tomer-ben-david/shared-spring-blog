@@ -81,7 +81,7 @@ public class BlogController {
     }
 
     @GetMapping("/{slug}")
-    public String post(@PathVariable String slug, Model model, HttpServletRequest request, HttpServletResponse response) {
+    public String post(@PathVariable("slug") String slug, Model model, HttpServletRequest request, HttpServletResponse response) {
         Optional<BlogPost> postOpt = blogService.getPostBySlug(slug);
 
         if (postOpt.isEmpty()) {
