@@ -26,7 +26,7 @@ Add to your `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.mindmeld360</groupId>
-    <artifactId>shared-spring-blog</artifactId>
+    <artifactId>devx-spring-blog</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
