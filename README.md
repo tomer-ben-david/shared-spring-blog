@@ -1,4 +1,4 @@
-# Shared Spring Blog
+# DevX Spring Blog
 
 A reusable Spring Boot library for adding blog functionality to your applications. Provides markdown-based blogging with YAML front matter, Disqus comments, social sharing, and RSS feeds.
 
